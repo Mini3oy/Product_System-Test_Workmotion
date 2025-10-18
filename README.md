@@ -50,16 +50,42 @@ routes/
 🧱 โครงสร้างโปรเจกต์
 ```
 project-root/
+│
 ├─ backend/
-│ └─ src/
-│ ├─ server.js
-│ ├─ models/
-│ │ └─ Product.js
-│ └─ ...
+│  ├─ package.json
+│  └─ src/
+│     ├─ server.js
+│     ├─ config/
+│     │  └─ db.js
+│     ├─ models/
+│     │  ├─ Product.js
+│     │  └─ Category.js
+│     ├─ controllers/
+│     │  ├─ productController.js
+│     │  └─ categoryController.js
+│     ├─ services/
+│     │  ├─ productService.js
+│     │  └─ categoryService.js
+│     └─ routes/
+│        ├─ productRoutes.js
+│        └─ categoryRoutes.js
+│
 └─ frontend/
-└─ src/
-├─ pages/
-└─ components/
+   ├─ package.json
+   └─ src/
+      ├─ main.js
+      ├─ router/
+      │  └─ index.js
+      ├─ api/
+      │  └─ index.js
+      ├─ layouts/
+      │  └─ DashboardLayout.vue
+      ├─ pages/
+      │  ├─ ProductsPage.vue
+      │  └─ CategoriesPage.vue
+      └─ components/
+         ├─ ProductForm.vue
+         └─ CategoryForm.vue
 ```
 
 🧾 Schema
